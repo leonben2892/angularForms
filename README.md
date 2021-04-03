@@ -1,149 +1,38 @@
-
-## Angular Forms In Depth
-
-This repository contains the code of the [Angular Forms In Depth](https://angular-university.io/course/angular-forms-course) video course.
-
-This course repository is updated to Angular v11:
-
-![Angular Forms In Depth](https://angular-university.s3-us-west-1.amazonaws.com/course-images/angular-forms-course-small.jpg)
-
-
-# Installation pre-requisites
-
-For running this project we need node and npm installed on our machine. These are some tutorials to install node in different operating systems:
-
-*Its important to install the latest version of Node*
-
-- [Install Node and NPM on Windows](https://www.youtube.com/watch?v=8ODS6RM6x7g)
-- [Install Node and NPM on Linux](https://www.youtube.com/watch?v=yUdHk-Dk_BY)
-- [Install Node and NPM on Mac](https://www.youtube.com/watch?v=Imj8PgG3bZU)
-
-
-# Installing the Angular CLI
-
-With the following command the angular-cli will be installed globally in your machine:
-
-    npm install -g @angular/cli 
-
-
-# How To install this repository
-
-We can install the master branch using the following commands:
-
-    git clone https://github.com/angular-university/angular-forms-course.git
-    
-This repository is made of several separate npm modules, that are installable separately. For example, to run the au-input module, we can do the following:
-    
-    cd angular-forms-course
-
-    npm install
-
-Its also possible to install the modules as usual using npm:
-
-    npm install 
-
-This should take a couple of minutes. If there are issues, please post the complete error message in the Questions section of the course.
-
-# To Run the Development Backend Server
-
-We can start the sample application backend with the following command:
-
-    npm run server
-
-This is a small Node REST API server.
-
-# To run the Development UI Server
-
-To run the frontend part of our code, we will use the Angular CLI:
-
-    npm start 
-
-The application is visible at port 4200: [http://localhost:4200](http://localhost:4200)
-
-
-
-# Important 
-
-This repository has multiple branches, have a look at the beginning of each section to see the name of the branch.
-
-At certain points along the course, you will be asked to checkout other remote branches other than master. You can view all branches that you have available remotely using the following command:
-
-    git branch -a
-
-  The remote branches have their starting in origin, such as for example 1-navigation-and-containers.
-
-We can checkout the remote branch and start tracking it with a local branch that has the same name, by using the following command:
-
-      git checkout -b section-1 origin/1-navigation-and-containers
-
-It's also possible to download a ZIP file for a given branch,  using the branch dropdown on this page on the top left, and then selecting the Clone or Download / Download as ZIP button.
-
-# Other Courses
-
-# Angular PWA Course
-
-If you are looking for the [Angular PWA Course](https://angular-university.io/course/angular-pwa-course), the repo with the full code can be found here:
-
-![Angular PWA Course - Build the future of the Web Today](https://s3-us-west-1.amazonaws.com/angular-university/course-images/angular-pwa-course.png)
-
-# Angular Security Masterclass
-
-If you are looking for the [Angular Security Masterclass](https://angular-university.io/course/angular-security-course), the repo with the full code can be found here:
-
-[Angular Security Masterclass](https://github.com/angular-university/angular-security-course).
-
-![Angular Security Masterclass](https://s3-us-west-1.amazonaws.com/angular-university/course-images/security-cover-small-v2.png)
-
-# Angular Advanced Library Laboratory Course
-
-If you are looking for the Angular Advanced Course, the repo with the full code can be found here:
-
-[Angular Advanced Library Laboratory Course: Build Your Own Library](https://angular-university.io/course/angular-advanced-course).
-
-![Angular Advanced Library Laboratory Course: Build Your Own Library](https://angular-academy.s3.amazonaws.com/thumbnails/advanced_angular-small-v3.png)
-
-
-## RxJs and Reactive Patterns Angular Architecture Course
-
-If you are looking for the RxJs and Reactive Patterns Angular Architecture Course code, the repo with the full code can be found here:
-
-[RxJs and Reactive Patterns Angular Architecture Course](https://angular-university.io/course/reactive-angular-architecture-course)
-
-![RxJs and Reactive Patterns Angular Architecture Course](https://s3-us-west-1.amazonaws.com/angular-academy/blog/images/rxjs-reactive-patterns-small.png)
-
-
-
-## Angular Ngrx Reactive Extensions Architecture Course
-
-If you are looking for the Angular Ngrx Reactive Extensions Architecture Course code, the repo with the full code can be found here:
-
-[Angular Ngrx Reactive Extensions Architecture Course](https://angular-university.io/course/angular2-ngrx)
-
-[Github repo for this course](https://github.com/angular-university/ngrx-course)
-
-![Angular Ngrx Course](https://angular-academy.s3.amazonaws.com/thumbnails/ngrx-angular.png)
-
-
-
-## Angular 2 and Firebase - Build a Web Application Course
-
-If you are looking for the Angular 2 and Firebase - Build a Web Application Course code, the repo with the full code can be found here:
-
-[Angular 2 and Firebase - Build a Web Application](https://angular-university.io/course/build-an-application-with-angular2)
-
-[Github repo for this course](https://github.com/angular-university/angular-firebase-app)
-
-![Angular firebase course](https://angular-academy.s3.amazonaws.com/thumbnails/angular_app-firebase-small.jpg)
-
-
-## Complete Typescript 2 Course - Build A REST API
-
-If you are looking for the Complete Typescript 2 Course - Build a REST API, the repo with the full code can be found here:
-
-[https://angular-university.io/course/typescript-2-tutorial](https://github.com/angular-university/complete-typescript-course)
-
-[Github repo for this course](https://github.com/angular-university/complete-typescript-course)
-
-![Complete Typescript Course](https://angular-academy.s3.amazonaws.com/thumbnails/typescript-2-small.png)
-
-# angularForms
+## Angular Form - Deep Dive
+
+### This project will cover:
+- Introduction to the Angular Forms module
+- Angular Material form components
+- Template-driven Forms - how does ngModel work?
+- Typical Form validation rules
+- Form field validation error messages
+- Using ngModel for one-way binding and bi-directional data binding
+- Understanding ngModelOptions in detail
+- Template-driven form custom validator
+- How to use the FormBuilder service
+- Refactoring of a form from template-driven to a reactive form
+- Comparison between template-driven and reactive forms - when to use each and why
+- Why are they called reactive forms? Understanding the multiple Observables available
+- How to reset and set new values in a reactive form
+- Development of a complex form using reactive forms
+- How to use all types of commonly used form controls: normal inputs, text areas, radio buttons, checkboxes, calendars, auto-completion, etc.
+- The formGroup and formControlName, and formControl directives
+- Reactive forms custom validators - multi-field validation
+- Backend validation of a form field using async validators
+- Dependent fields - how to enable or disable some form fields depending on the values of other fields
+- Pre-saving a form draft
+- Building a multi-step form with Angular Material
+- Reusable nested forms (an address form)
+- Custom File Upload Form Control
+- Form Arrays
+
+
+![forms_image1](https://user-images.githubusercontent.com/12692788/113489598-cf2d6f80-94cd-11eb-98c4-c46c4df3d119.png)
+
+![forms_image2](https://user-images.githubusercontent.com/12692788/113489603-da809b00-94cd-11eb-9aba-0871d3e39954.png)
+
+![forms_image3](https://user-images.githubusercontent.com/12692788/113489614-e2d8d600-94cd-11eb-97d7-96ad7811b620.png)
+
+![forms_image4](https://user-images.githubusercontent.com/12692788/113489622-e9674d80-94cd-11eb-92a7-5e4a6e1ad2cd.png)
+
+![forms_image5](https://user-images.githubusercontent.com/12692788/113489695-4cf17b00-94ce-11eb-8f2e-b6423c7ef388.png)
